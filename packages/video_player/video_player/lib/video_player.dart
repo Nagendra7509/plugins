@@ -561,6 +561,11 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
     await _applyVolume();
   }
 
+  Future<void> getSometing(double volume) async {
+    value = value.copyWith(volume: volume.clamp(0.0, 1.0));
+    await _applyVolume();
+  }
+
   /// Sets the playback speed of [this].
   ///
   /// [speed] indicates a speed value with different platforms accepting
