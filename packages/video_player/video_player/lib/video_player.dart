@@ -562,7 +562,7 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
   }
 
   /// Get current tracks information
-  dynamic getTracksInfo(BuildContext context) {
+  dynamic getTracksInfo() {
     return _videoPlayerPlatform.getTracksInfo();
   }
 
