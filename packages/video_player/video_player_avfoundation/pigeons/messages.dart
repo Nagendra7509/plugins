@@ -69,6 +69,8 @@ abstract class AVFoundationVideoPlayerApi {
   void setLooping(LoopingMessage msg);
   @ObjCSelector('setVolume:')
   void setVolume(VolumeMessage msg);
+  @ObjCSelector('getTracksInfo:')
+  void getTracksInfo();
   @ObjCSelector('setPlaybackSpeed:')
   void setPlaybackSpeed(PlaybackSpeedMessage msg);
   @ObjCSelector('play:')

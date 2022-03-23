@@ -80,6 +80,11 @@ class MethodChannelVideoPlayer extends VideoPlayerPlatform {
   }
 
   @override
+  Future<dynamic> getTracksInfo() {
+    return _api.getTracksInfo();
+  }
+
+  @override
   Future<void> setPlaybackSpeed(int textureId, double speed) {
     assert(speed > 0);
 

@@ -387,6 +387,8 @@ class AVFoundationVideoPlayerApi {
     }
   }
 
+  Future<dynamic> getTracksInfo() {}
+
   Future<void> setPlaybackSpeed(PlaybackSpeedMessage arg_msg) async {
     final BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(
         'dev.flutter.pigeon.AVFoundationVideoPlayerApi.setPlaybackSpeed', codec,

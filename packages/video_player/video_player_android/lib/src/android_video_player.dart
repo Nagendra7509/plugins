@@ -94,6 +94,11 @@ class AndroidVideoPlayer extends VideoPlayerPlatform {
   }
 
   @override
+  Future<dynamic> getTracksInfo(int textureId) {
+    return _api.getTracksInfo();
+  }
+
+  @override
   Future<void> setPlaybackSpeed(int textureId, double speed) {
     assert(speed > 0);
 

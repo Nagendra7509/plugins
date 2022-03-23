@@ -80,7 +80,7 @@ abstract class VideoPlayerPlatform extends PlatformInterface {
   }
 
   /// Something
-  dynamic getTracksInfo(BuildContext context) {
+  dynamic getTracksInfo() {
     throw UnimplementedError('getTracksInfo() has not been implemented.');
   }
 

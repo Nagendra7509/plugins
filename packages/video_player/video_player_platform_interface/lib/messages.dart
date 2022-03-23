@@ -271,6 +271,8 @@ class VideoPlayerApi {
     }
   }
 
+  Future<void> getTracksInfo() async {}
+
   Future<void> setPlaybackSpeed(PlaybackSpeedMessage arg) async {
     final Object encoded = arg.encode();
     const BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(

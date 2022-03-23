@@ -127,6 +127,11 @@ class VideoPlayerPlugin extends VideoPlayerPlatform {
   }
 
   @override
+  Future<void> getTracksInfo(dynamic dynamic) async {
+    return _videoPlayers[dynamic]!.getTracksInfo();
+  }
+
+  @override
   Future<void> setPlaybackSpeed(int textureId, double speed) async {
     assert(speed > 0);
 
@@ -279,6 +284,10 @@ class _VideoPlayer {
       videoElement.muted = true;
     }
     videoElement.volume = value;
+  }
+
+  void getTracksInfo() {
+    print('somewhere');
   }
 
   void setPlaybackSpeed(double speed) {

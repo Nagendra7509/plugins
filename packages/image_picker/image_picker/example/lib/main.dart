@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // interaction (clicking on a "play" button, for example).
       const double volume = kIsWeb ? 0.0 : 1.0;
       await controller.setVolume(volume);
-      await controller.getTracksInfo(context);
+      await controller.getTracksInfo();
       await controller.initialize();
       await controller.setLooping(true);
       await controller.play();

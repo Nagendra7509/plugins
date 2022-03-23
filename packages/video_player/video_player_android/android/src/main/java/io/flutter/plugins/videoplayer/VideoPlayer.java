@@ -249,12 +249,12 @@ final class VideoPlayer {
   }
 
   void getTracksInfo(BuildContext context) {
-    DefaultTrackSelector trackSelector = new DefaultTrackSelector(context);
-    exoPlayer.getTracksInfo(context);
+    String str = "Came";
+    System.out.println(str);
   }
 
- 
 
+  
   void setPlaybackSpeed(double value) {
     // We do not need to consider pitch and skipSilence for now as we do not handle them and
     // therefore never diverge from the default values.
