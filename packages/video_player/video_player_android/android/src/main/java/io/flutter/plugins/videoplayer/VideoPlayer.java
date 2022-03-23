@@ -248,6 +248,11 @@ final class VideoPlayer {
     exoPlayer.setVolume(bracketedValue);
   }
 
+  void getTracksInfo(BuildContext context) {
+    DefaultTrackSelector trackSelector = new DefaultTrackSelector(context);
+    exoPlayer.getTracksInfo(context);
+  }
+
  
 
   void setPlaybackSpeed(double value) {

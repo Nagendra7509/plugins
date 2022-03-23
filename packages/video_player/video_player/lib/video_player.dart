@@ -562,8 +562,9 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
   }
 
   /// Get current tracks information
-  void getCurrentTracksInfo() {
-    print('printed');
+  dynamic getCurrentTracksInfo(BuildContext context) {
+    // print('printed');
+    return _videoPlayerPlatform.getTracksInfo(context);
   }
 
   /// Sets the playback speed of [this].
