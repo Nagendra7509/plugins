@@ -79,8 +79,8 @@ abstract class VideoPlayerPlatform extends PlatformInterface {
     throw UnimplementedError('setVolume() has not been implemented.');
   }
 
-  dynamic getCurrentTracksInfo(BuildContext context) {
-    throw UnimplementedError('setVolume() has not been implemented.');
+  dynamic getTracksInfo(BuildContext context) {
+    throw UnimplementedError('getTracksInfo() has not been implemented.');
   }
 
   /// Sets the video position to a [Duration] from the start.
