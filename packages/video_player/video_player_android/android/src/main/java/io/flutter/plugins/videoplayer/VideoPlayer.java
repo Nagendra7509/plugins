@@ -248,6 +248,11 @@ final class VideoPlayer {
     exoPlayer.setVolume(bracketedValue);
   }
 
+  void getTracksInfo(BuildContext context) {
+    DefaultTrackSelector trackSelector = new DefaultTrackSelector(context);
+    exoPlayer.getTracksInfo(context);
+  }
+
   void setPlaybackSpeed(double value) {
     // We do not need to consider pitch and skipSilence for now as we do not handle them and
     // therefore never diverge from the default values.
@@ -263,6 +268,8 @@ final class VideoPlayer {
   long getPosition() {
     return exoPlayer.getCurrentPosition();
   }
+
+  
 
   @SuppressWarnings("SuspiciousNameCombination")
   private void sendInitialized() {

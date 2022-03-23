@@ -561,14 +561,9 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
     await _applyVolume();
   }
 
-  /// Sets the audio volume of [this].
-  ///
-  /// [volume] indicates a value between 0.0 (silent) and 1.0 (full volume) on a
-  /// linear scale.
-  /// linear scale.
-  Future<void> setSomething(double volume) async {
-    value = value.copyWith(volume: volume.clamp(0.0, 1.0));
-    await _applyVolume();
+  /// Get current tracks information
+  dynamic getCurrentTracksInfo(BuildContext context) async {
+    return _videoPlayerPlatform.getTracksInfo(context);
   }
 
   /// Sets the playback speed of [this].
