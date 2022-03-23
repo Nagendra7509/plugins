@@ -79,6 +79,10 @@ abstract class VideoPlayerPlatform extends PlatformInterface {
     throw UnimplementedError('setVolume() has not been implemented.');
   }
 
+  dynamic getCurrentTracksInfo(BuildContext context) {
+    throw UnimplementedError('setVolume() has not been implemented.');
+  }
+
   /// Sets the video position to a [Duration] from the start.
   Future<void> seekTo(int textureId, Duration position) {
     throw UnimplementedError('seekTo() has not been implemented.');
